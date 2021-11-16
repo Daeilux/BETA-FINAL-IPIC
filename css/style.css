@@ -433,7 +433,7 @@ footer {
 /*KEYFRAMES*/
 @keyframes salto {
   0% {
-    transform: translatey(-2%);
+    transform: translatey(-5%);
   }
 
   100% {
