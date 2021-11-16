@@ -30,6 +30,10 @@ body {
   position: relative;
 }
 
+:root {
+  --swiper-theme-color: #ad9636 !important;
+}
+
 /* MENU PRINCIPAL */
 .menu-principal {
   width: 100%;
@@ -561,6 +565,10 @@ footer {
   #container4 p{
     padding: 0 8px;
   }
+
+  .slider{
+    margin-top: 70px;
+  }
 }
 
 @media screen and (max-width: 1085px) {
@@ -572,5 +580,9 @@ footer {
 @media screen and (max-width: 1400px) {
   #container5{
     flex-wrap: wrap;
+  }
+
+  .slider{
+    height: auto;
   }
 }

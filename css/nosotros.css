@@ -19,6 +19,10 @@
   font-family: var(--text-defaul);
 }
 
+.sociales span{
+  color: var(--color-primario);
+}
+
 html {
   scroll-behavior: smooth;
 }

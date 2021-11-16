@@ -210,6 +210,7 @@ body {
   max-width: 1030px;
   margin: 0 auto;
   border-radius: 5px;
+  align-items: center;
 }
 
 #infoH div h2 {
@@ -237,6 +238,7 @@ h2,p ,h1 {
   border-radius: 5px;
   color: #fff;
   font-size: 14pxs;
+  cursor: pointer;
 }
 
 .btn:hover{
@@ -317,6 +319,67 @@ li{
 }
 
 
+/* R E G I S T R O */
+
+#Register{
+  width: 50%;
+  position: fixed;
+  top: 200px;
+  color: gray;
+  z-index: 99;
+  max-width: 690px;
+}
+
+#controlRegistro{
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 8px 8px 0 0;
+  background-color: #7c3055;
+  padding: 10px;
+}
+
+#infoRegistro{
+  padding: 12px 30px;
+  background-color: #383636;
+  height: auto;
+  overflow: auto;
+  border-radius: 0 0 8px 8px;
+}
+
+#infoRegistro h2 {
+  color: #b59e45;
+  line-height: 40px;
+}
+
+#infoRegistro ul{
+  padding-left: 20px;
+  line-height: 25px;
+}
+
+#infoRegistro li{
+  cursor: default;
+}
+
+#infoRegistro p{
+  margin-top: 15px;
+  text-align: justify;
+}
+
+#infoRegistro a{
+  color: #b59e45;
+  margin-top: 7px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+#infoRegistro a:hover {
+  color: #b8a559;
+}
+#infoRegistro h3{
+  color: #b59e45;
+  cursor: default;
+}
+
 /* FOOTER */
 footer {
   display: flex;
@@ -367,6 +430,7 @@ footer {
 .sociales-metodo i:hover {
   transform: translateY(-20px);
 }
+
 
 /* MEDIA QUERYS */
 
@@ -473,13 +537,26 @@ footer {
   #infoH{
     flex-direction: column;
     gap: 15px;
+    align-items: flex-start;
   }
 }
 
-@media (min-width: 1520px)  and (min-height:800px){
+@media (min-width: 1120px)  and (min-height:800px){
   footer{
     position: fixed;
     width: 100%;
     bottom: 0;
+  }
+}
+
+@media screen and (max-width:720px) {
+  #Register{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px){
+  #infoRegistro h3{
+    font-size: 13px;
   }
 }

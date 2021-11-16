@@ -111,8 +111,6 @@ const createInfo = () => {
   }
   deletInfo()
 
- 
-  
 }
 
 const Create = () => {
@@ -122,3 +120,48 @@ const Create = () => {
 Create()
 
 
+const createRegistro = () =>{
+  let container = document.getElementById('infoC')
+  let element = document.createElement('article');
+  element.id = 'Register'
+
+  element.innerHTML = `
+  <div id="controlRegistro">
+    <i class="far fa-times-circle" id="close2"></i>
+  </div>
+
+  <div id="infoRegistro">
+  <h2>Requisitos</h2>
+  <ul>
+    <li>Certificado de secundaria original y 2 copias</li> 
+    <li>Acta de nacimiento original y 2 copias</li>
+    <li>5 fotografías tamaño infantil</li>
+    <li>Clave única de registro de población (CURP)</li>
+  </ul>
+
+  <p>Gracias por estar en contacto con nosotros, por favor ingresa tus datos en la siguiente forma, para tener contacto contigo:</p>
+  <a href="../Sources/ingreso.doc" download>Ficha de inscripcion</a>  
+  <p>Este formato debera ser llenado, guardado y enviado a:</p>
+  <h3>serviciosacademicos@ipic.com.mx</h3>
+  
+  </div>
+  `
+  container.appendChild(element)
+
+  const removeRegister = () => {
+    let element = document.getElementById('Register')
+    element.remove()
+  }
+  
+  const deletInfoRegister = () => {
+    let container = document.getElementById('close2')
+    container.addEventListener('click', removeRegister)
+  }
+  deletInfoRegister()
+}
+
+const CreateInfo = () => {
+  let element = document.getElementById('btnRegister')
+  element.addEventListener('click', createRegistro)
+}
+CreateInfo()
