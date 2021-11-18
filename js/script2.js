@@ -102,9 +102,7 @@ const createRegistro = () =>{
   </ul>
 
   <p>Gracias por estar en contacto con nosotros, por favor ingresa tus datos en la siguiente forma, para tener contacto contigo:</p>
-  <a href="../Sources/ingreso.doc" download>Ficha de inscripcion</a>  
-  <p>Este formato debera ser llenado, guardado y enviado a:</p>
-  <h3>serviciosacademicos@ipic.com.mx</h3>
+  <a href="https://ipic.aulaescolar.net//app/inicio" target="_blank">Ficha de inscripcion</a>  
   
   </div>
   `

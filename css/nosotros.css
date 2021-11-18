@@ -183,7 +183,7 @@ p {
 
 #cont-valores {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 5px;
   margin-top: 10px;
 }
