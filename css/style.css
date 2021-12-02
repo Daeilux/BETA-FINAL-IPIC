@@ -127,6 +127,7 @@ span{
 }
 
 .swiper-slide {
+  position: relative;
   text-align: center;
   font-size: 18px;
   background: #333;
@@ -153,6 +154,44 @@ span{
   object-fit: cover;
 }
 
+.swiper-slide video {
+  width: 88%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-slide h2 {
+  position: absolute;
+  color: #ad9636;
+  bottom: 180px;
+  left: 50px;
+}
+
+.swiper-slide p {
+  position: absolute;
+  bottom: 150px;
+  left: 50px;
+  color: #fff;
+}
+
+.btn-link {
+  position: absolute;
+  text-decoration: none;
+  bottom: 100px;
+  left: 50px;
+  padding: 8px;
+  background-color: #ad9636;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-link:hover{
+  transform: scale(1.04);
+  transition: 0.3s;
+  background-color: #6a2446;
+  color: #ad9636;
+}
 
 /*C O N T A I N E R 1*/
 #container1{
@@ -168,6 +207,7 @@ span{
   width: 500px;
   text-align: justify;
   color: #b59e45;
+  text-align: justify;
 }
 
 .info h2{
@@ -339,10 +379,11 @@ span{
 
 .especialidad-info p{
   color: darkgray;
+  text-align: justify;
 }
 
 .especialidad-info a {
-  color: #b59e45;;
+  color: #3882d2;;
   line-height: 30px;
 }
 
@@ -588,5 +629,72 @@ footer {
 
   .slider{
     height: auto;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px){
+  .swiper-slide h2 {
+    bottom: 130px;
+  }
+  
+  .swiper-slide p {
+    bottom: 105px;
+  }
+  
+  .btn-link {
+    bottom: 60px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 875px) and (max-width: 1000px){
+  .swiper-slide h2 {
+    bottom: 100px;
+  }
+  
+  .swiper-slide p {
+    bottom: 75px;
+    text-align: justify;
+  }
+  
+  .btn-link {
+    bottom: 35px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 518px) and (max-width: 875px){
+  .swiper-slide h2 {
+    bottom: 100px;
+  }
+  
+  .swiper-slide p {
+    bottom: 60px;
+    text-align: justify;
+  }
+  
+  .btn-link {
+    bottom: 20px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 518px){
+  .swiper-slide h2 {
+    bottom: 80px;
+    font-size: 18px;
+  }
+  
+  .swiper-slide p {
+    bottom: 38px;
+    font-size: 12px;
+    text-align: justify;
+    width: 70%;
+  }
+  
+  .btn-link {
+    font-size: 12px;
+    bottom: 10px;
+    padding: 4px;
   }
 }
