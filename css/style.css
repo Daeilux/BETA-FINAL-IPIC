@@ -156,8 +156,14 @@ span {
   width: 100%;
   height: auto;
   object-fit: cover;
+  background-size: contain;
 }
 
+.img-type-height-alt{
+  width: 96% !important;
+  height: auto;
+  object-fit: cover;
+}
 .swiper-slide video {
   width: 88%;
   height: auto;
