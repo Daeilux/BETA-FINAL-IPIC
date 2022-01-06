@@ -157,6 +157,8 @@ span {
   height: auto;
   object-fit: cover;
   background-size: contain;
+  opacity: 0.8; 
+  filter: brightness(50%);
 }
 
 .img-type-height-alt{

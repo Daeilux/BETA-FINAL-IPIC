@@ -10,10 +10,18 @@ async function handleSubmit(event) {
         'Accept': 'application/json'
     }
   }).then(response => {
-    alert('datos enviados con exito');
+    swal({
+      title: "Exito",
+      text: "Datos de formulario enviados, se te contestara en breve",
+      icon: "success"
+    })
     form.reset()
   }).catch(error => {
-    alert('upps!, hubo un problema, intenta mas tarde')
+    swal({
+      title: "Error",
+      text: "Datos de formulario no enviados, intentalo mas tarde",
+      icon: "warning"
+    })
   });
 }
 form.addEventListener("submit", handleSubmit)
