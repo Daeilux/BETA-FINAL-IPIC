@@ -13,7 +13,7 @@ async function handleSubmit(event) {
     alert('datos enviados con exito');
     form.reset()
   }).catch(error => {
-    alert('Oops! There was a problem submitting your form')
+    alert('upps!, hubo un problema, intenta mas tarde')
   });
 }
 form.addEventListener("submit", handleSubmit)
