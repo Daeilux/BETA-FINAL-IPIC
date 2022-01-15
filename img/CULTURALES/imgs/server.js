@@ -1,7 +1,7 @@
 simplyCountdown("#footer", {
     year: 2022,
     month: 1, 
-    day: 15, 
+    day: 14, 
     hours: 8,
     minutes: 16, 
     seconds: 0, 
