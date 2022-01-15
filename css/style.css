@@ -483,6 +483,18 @@ footer {
   transform: translateY(-20px);
 }
 
+.simply-section {
+	display: none;
+}
+
+.simply-amount {
+	display: none;
+}
+
+.simply-word {
+	display: none;
+}
+
 /*KEYFRAMES*/
 @keyframes salto {
   0% {
