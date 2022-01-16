@@ -11,9 +11,9 @@ async function handleSubmit(event) {
     }
   }).then(response => {
     swal({
-      title: "Exito",
-      text: "Datos de formulario enviados, se te contestara en breve",
-      icon: "success"
+      title: "Error",
+      text: "Error 204, servidor no encontrado",
+      icon: "warning"
     })
     form.reset()
   }).catch(error => {
