@@ -26,9 +26,6 @@ html {
   position: relative;
 }
 
-body {
-  position: relative;
-}
 
 :root {
   --swiper-theme-color: #ad9636 !important;
