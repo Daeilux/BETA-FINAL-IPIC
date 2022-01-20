@@ -1,4 +1,3 @@
-/* VARIABLES */
 :root {
   --color-primario: #ad9636;
   --color-secundario: #e92f3d;
@@ -11,7 +10,6 @@
   --terciaro: #ad9636;
 }
 
-/* GENERALES */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +17,7 @@
   font-family: var(--text-defaul);
 }
 
-.sociales span{
+.sociales span {
   color: var(--color-primario);
 }
 
@@ -35,7 +33,7 @@ p {
   text-align: justify;
 }
 
-/* NAVEGACION */
+
 .menu-principal {
   width: 100%;
   display: flex;
@@ -108,11 +106,7 @@ p {
   color: var(--color-secundario);
 }
 
-/********************** C O N T E N I D O***************************/
 
-/*P R I M E R   C O N T E N E D O R*/
-
-/*CONTENEDOR PADRE*/
 .container {
   width: 100%;
   background-color: #333;
@@ -122,7 +116,6 @@ p {
   justify-content: center;
 }
 
-/*CONTENEDOR HIJO1(TEXTO)*/
 .elements {
   max-width: 1500px;
   width: 100%;
@@ -153,6 +146,7 @@ p {
   margin-left: 130px;
   padding-top: 50px;
 }
+
 #cont-mensaje p {
   color: var(--color-primario);
   margin-bottom: 20px;
@@ -221,7 +215,7 @@ section i:hover {
   box-shadow: -1px 0px 7px 1px #333333;
 }
 
-.contenedorsecundario > section > img {
+.contenedorsecundario>section>img {
   box-shadow: -1px 0px 7px 1px #333333;
 }
 
@@ -233,7 +227,7 @@ section h4 {
   color: #3c0922;
 }
 
-/* FOOTER */
+
 footer {
   display: flex;
   margin-top: 80px;
@@ -276,7 +270,7 @@ footer {
   transition: all 0.5s;
 }
 
-.sociales-metodo i:hover + span {
+.sociales-metodo i:hover+span {
   transform: translateY(0px);
 }
 
@@ -288,7 +282,6 @@ h2 {
   color: #3c0922;
 }
 
-/* K E Y F R A M E S */
 @keyframes salto {
   0% {
     transform: translatey(-5%);
@@ -299,10 +292,10 @@ h2 {
   }
 }
 
-/* MEDIA QUERYS */
 
 @media screen and (max-width: 650px) {
-  /* MENU PRINCIPAL */
+
+  
   .menu-principal {
     position: fixed;
     top: 0;
@@ -348,9 +341,11 @@ h2 {
   .menu-bar .sociales a {
     font-size: 20px;
   }
+
   #cont-img {
     display: none;
   }
+
   #cont-mensaje div {
     display: none;
   }
@@ -428,6 +423,7 @@ h2 {
   #cont-img {
     display: none;
   }
+
   #cont-mensaje div {
     display: none;
   }

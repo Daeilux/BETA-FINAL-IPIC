@@ -62,17 +62,6 @@ const createInfo = () => {
 
     container.appendChild(element);
 
-    const delet = () => {
-        let element = document.getElementById('Temario')
-        element.remove()
-    }
-
-    const deletInfo = () => {
-        let container = document.getElementById('close')
-        container.addEventListener('click', delet)
-    }
-    deletInfo()
-
 }
 
 const Create = () => {
@@ -108,16 +97,8 @@ const createRegistro = () =>{
   `
   container.appendChild(element)
 
-  const removeRegister = () => {
-    let element = document.getElementById('Register')
-    element.remove()
-  }
   
-  const deletInfoRegister = () => {
-    let container = document.getElementById('close2')
-    container.addEventListener('click', removeRegister)
-  }
-  deletInfoRegister()
+  
 }
 
 const CreateInfo = () => {

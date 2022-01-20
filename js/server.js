@@ -19,7 +19,7 @@ async function handleSubmit(event) {
   }).catch(error => {
     swal({
       title: "Error",
-      text: "Datos de formulario no enviados, intentalo mas tarde",
+      text: "Error 204, servidor no encontrado",
       icon: "warning"
     })
   });

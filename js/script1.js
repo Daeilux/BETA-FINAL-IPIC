@@ -100,17 +100,6 @@ const createInfo = () => {
 
   container.appendChild(element);
 
-  const delet = () => {
-    let element = document.getElementById('Temario')
-    element.remove()
-  }
-  
-  const deletInfo = () => {
-    let container = document.getElementById('close')
-    container.addEventListener('click', delet)
-  }
-  deletInfo()
-
 }
 
 const Create = () => {
